@@ -46,12 +46,13 @@ cmake_ninja_workdir = /Users/fkavum/Documents/CPlus/OpenGL/src/Tutorial2/cmake-b
 
 build cmake_object_order_depends_target_OpenGL: phony || CMakeFiles/OpenGL.dir
 
-build CMakeFiles/OpenGL.dir/main.cpp.o: CXX_COMPILER__OpenGL_Debug /Users/fkavum/Documents/CPlus/OpenGL/src/Tutorial2/main.cpp || cmake_object_order_depends_target_OpenGL
-  DEP_FILE = CMakeFiles/OpenGL.dir/main.cpp.o.d
+build CMakeFiles/OpenGL.dir/src/Application.cpp.o: CXX_COMPILER__OpenGL_Debug /Users/fkavum/Documents/CPlus/OpenGL/src/Tutorial2/src/Application.cpp || cmake_object_order_depends_target_OpenGL
+  DEFINES = -DGLEW_STATIC
+  DEP_FILE = CMakeFiles/OpenGL.dir/src/Application.cpp.o.d
   FLAGS = -framework Cocoa -framework OpenGL -framework IOKit -framework CoreVideo -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++17
-  INCLUDES = -I/Users/fkavum/Documents/CPlus/OpenGL/src/Tutorial2/./GLFW/include
+  INCLUDES = -I/Users/fkavum/Documents/CPlus/OpenGL/src/Tutorial2/./../../dependencies/GLFW/include
   OBJECT_DIR = CMakeFiles/OpenGL.dir
-  OBJECT_FILE_DIR = CMakeFiles/OpenGL.dir
+  OBJECT_FILE_DIR = CMakeFiles/OpenGL.dir/src
 
 
 # =============================================================================
@@ -61,7 +62,7 @@ build CMakeFiles/OpenGL.dir/main.cpp.o: CXX_COMPILER__OpenGL_Debug /Users/fkavum
 #############################################
 # Link the executable OpenGL
 
-build OpenGL: CXX_EXECUTABLE_LINKER__OpenGL_Debug CMakeFiles/OpenGL.dir/main.cpp.o | /Users/fkavum/Documents/CPlus/OpenGL/dependencies/GLFW/lib-universal/libglfw3.a
+build OpenGL: CXX_EXECUTABLE_LINKER__OpenGL_Debug CMakeFiles/OpenGL.dir/src/Application.cpp.o | /Users/fkavum/Documents/CPlus/OpenGL/dependencies/GLFW/lib-universal/libglfw3.a
   FLAGS = -framework Cocoa -framework OpenGL -framework IOKit -framework CoreVideo -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2
   LINK_LIBRARIES = /Users/fkavum/Documents/CPlus/OpenGL/dependencies/GLFW/lib-universal/libglfw3.a
   OBJECT_DIR = CMakeFiles/OpenGL.dir
