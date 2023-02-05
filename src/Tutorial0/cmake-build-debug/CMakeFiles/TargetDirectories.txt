@@ -1,0 +1,4 @@
+/Users/fkavum/Documents/CPlus/OpenGL/src/Tutorial0/cmake-build-debug/CMakeFiles/Tutorial0.dir
+/Users/fkavum/Documents/CPlus/OpenGL/src/Tutorial0/cmake-build-debug/CMakeFiles/Tutorial0_lib.dir
+/Users/fkavum/Documents/CPlus/OpenGL/src/Tutorial0/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/fkavum/Documents/CPlus/OpenGL/src/Tutorial0/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1102,6 +1102,18 @@
 			"value" : "FALSE"
 		},
 		{
+			"name" : "GLES_SDK_INCLUDE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/JavaRuntimeSupport.framework/Headers"
+		},
+		{
 			"name" : "GLEWLib",
 			"properties" : 
 			[
@@ -1172,6 +1184,54 @@
 			],
 			"type" : "STATIC",
 			"value" : "/Users/fkavum/Documents/CPlus/OpenGL"
+		},
+		{
+			"name" : "Path",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/opt/homebrew/opt/mongodb-community@5.0/bin"
+		},
+		{
+			"name" : "Path2",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "Path2-NOTFOUND"
+		},
+		{
+			"name" : "Path23",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "Path23-NOTFOUND"
+		},
+		{
+			"name" : "Root",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/opt/homebrew/opt/mongodb-community@5.0/bin"
 		},
 		{
 			"name" : "TEST_LIB",

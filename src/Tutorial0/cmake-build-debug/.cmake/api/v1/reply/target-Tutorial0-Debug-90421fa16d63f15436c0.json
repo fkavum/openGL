@@ -1,9 +1,8 @@
 {
-	"archive" : {},
 	"artifacts" : 
 	[
 		{
-			"path" : "libtest_library.a"
+			"path" : "Tutorial0"
 		}
 	],
 	"backtrace" : 1,
@@ -11,7 +10,7 @@
 	{
 		"commands" : 
 		[
-			"add_library"
+			"add_executable"
 		],
 		"files" : 
 		[
@@ -25,7 +24,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 7,
+				"line" : 11,
 				"parent" : 0
 			}
 		]
@@ -36,7 +35,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-framework Cocoa -framework OpenGL -framework IOKit -framework CoreVideo -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics"
+					"fragment" : "-g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics"
 				},
 				{
 					"fragment" : "-std=gnu++17"
@@ -57,9 +56,24 @@
 			]
 		}
 	],
-	"id" : "test_library::@6890427a1f51a3e7e1df",
-	"name" : "test_library",
-	"nameOnDisk" : "libtest_library.a",
+	"id" : "Tutorial0::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "Tutorial0",
+	"nameOnDisk" : "Tutorial0",
 	"paths" : 
 	{
 		"build" : ".",
@@ -84,5 +98,5 @@
 			"sourceGroupIndex" : 0
 		}
 	],
-	"type" : "STATIC_LIBRARY"
+	"type" : "EXECUTABLE"
 }

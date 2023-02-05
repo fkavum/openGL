@@ -38,69 +38,6 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /Users/fkavum/Documents/CPlus/OpenGL/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target OpenGLRunning
-
-
-#############################################
-# Order-only phony target for OpenGLRunning
-
-build cmake_object_order_depends_target_OpenGLRunning: phony || CMakeFiles/OpenGLRunning.dir
-
-build CMakeFiles/OpenGLRunning.dir/main.cpp.o: CXX_COMPILER__OpenGLRunning_Debug /Users/fkavum/Documents/CPlus/OpenGL/main.cpp || cmake_object_order_depends_target_OpenGLRunning
-  DEP_FILE = CMakeFiles/OpenGLRunning.dir/main.cpp.o.d
-  FLAGS = -framework Cocoa -framework OpenGL -framework IOKit -framework CoreVideo -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++17
-  OBJECT_DIR = CMakeFiles/OpenGLRunning.dir
-  OBJECT_FILE_DIR = CMakeFiles/OpenGLRunning.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target OpenGLRunning
-
-
-#############################################
-# Link the executable OpenGLRunning
-
-build OpenGLRunning: CXX_EXECUTABLE_LINKER__OpenGLRunning_Debug CMakeFiles/OpenGLRunning.dir/main.cpp.o
-  FLAGS = -framework Cocoa -framework OpenGL -framework IOKit -framework CoreVideo -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2
-  OBJECT_DIR = CMakeFiles/OpenGLRunning.dir
-  POST_BUILD = :
-  PRE_LINK = :
-  TARGET_FILE = OpenGLRunning
-  TARGET_PDB = OpenGLRunning.dbg
-
-# =============================================================================
-# Object build statements for STATIC_LIBRARY target test_library
-
-
-#############################################
-# Order-only phony target for test_library
-
-build cmake_object_order_depends_target_test_library: phony || CMakeFiles/test_library.dir
-
-build CMakeFiles/test_library.dir/main.cpp.o: CXX_COMPILER__test_library_Debug /Users/fkavum/Documents/CPlus/OpenGL/main.cpp || cmake_object_order_depends_target_test_library
-  DEP_FILE = CMakeFiles/test_library.dir/main.cpp.o.d
-  FLAGS = -framework Cocoa -framework OpenGL -framework IOKit -framework CoreVideo -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++17
-  OBJECT_DIR = CMakeFiles/test_library.dir
-  OBJECT_FILE_DIR = CMakeFiles/test_library.dir
-
-
-# =============================================================================
-# Link build statements for STATIC_LIBRARY target test_library
-
-
-#############################################
-# Link the static library libtest_library.a
-
-build libtest_library.a: CXX_STATIC_LIBRARY_LINKER__test_library_Debug CMakeFiles/test_library.dir/main.cpp.o
-  ARCH_FLAGS = -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2
-  LANGUAGE_COMPILE_FLAGS = -framework Cocoa -framework OpenGL -framework IOKit -framework CoreVideo -g
-  OBJECT_DIR = CMakeFiles/test_library.dir
-  POST_BUILD = :
-  PRE_LINK = :
-  TARGET_FILE = libtest_library.a
-  TARGET_PDB = test_library.a.dbg
-
-# =============================================================================
 # Object build statements for EXECUTABLE target OpenGL
 
 
@@ -110,7 +47,6 @@ build libtest_library.a: CXX_STATIC_LIBRARY_LINKER__test_library_Debug CMakeFile
 build cmake_object_order_depends_target_OpenGL: phony || CMakeFiles/OpenGL.dir
 
 build CMakeFiles/OpenGL.dir/src/Application.cpp.o: CXX_COMPILER__OpenGL_Debug /Users/fkavum/Documents/CPlus/OpenGL/src/Application.cpp || cmake_object_order_depends_target_OpenGL
-  DEFINES = -DGLEW_STATIC
   DEP_FILE = CMakeFiles/OpenGL.dir/src/Application.cpp.o.d
   FLAGS = -framework Cocoa -framework OpenGL -framework IOKit -framework CoreVideo -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.2 -fcolor-diagnostics -std=gnu++17
   INCLUDES = -I/Users/fkavum/Documents/CPlus/OpenGL/./dependencies/GLFW/include -I/Users/fkavum/Documents/CPlus/OpenGL/./dependencies/GLEW/include
@@ -160,8 +96,6 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build test_library: phony libtest_library.a
-
 # =============================================================================
 # Folder targets.
 
@@ -170,7 +104,7 @@ build test_library: phony libtest_library.a
 #############################################
 # Folder: /Users/fkavum/Documents/CPlus/OpenGL/cmake-build-debug
 
-build all: phony OpenGLRunning libtest_library.a OpenGL
+build all: phony OpenGL
 
 # =============================================================================
 # Built-in targets
