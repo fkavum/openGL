@@ -12,7 +12,7 @@ which initialize a graphics context for OpenGL
 so for OpenGL if we want to do this manually, it wont be crssplatform, to access the drivers and pull out functions from that we need to use win32 api calls etc.
  loading library and loading function points all that, second problem we need to go thought all the opengl functions and implement it...
 
-
+DOC: glew.sourceforce.net
 We have simply library for this! : GLEW
 
 all it does, it provides the OpenGL Api specification, kind of function declarations and symbol declarations, and contants and all that stuff
@@ -22,4 +22,11 @@ all it does, it provides the OpenGL Api specification, kind of function declarat
  They dont implement the functions or anything they  just access functions that are already on you computer.
 
 
+
+ DOC USAGE:
+ You cant use OpenGL functions from glew, until you call glew.init
+ You need to create a valid OpenGL rendering context before you call glewinit.
+
+
+ in the lib folder if libname suffix with "s" letter thats the static library
  */

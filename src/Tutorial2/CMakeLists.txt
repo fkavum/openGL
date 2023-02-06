@@ -10,8 +10,6 @@ target_include_directories(OpenGL PUBLIC ./../../dependencies/GLFW/include)
 find_library(GLFWLib libglfw3.a ./../../dependencies/GLFW/lib-universal/)
 target_link_libraries(OpenGL LINK_PUBLIC ${GLFWLib})
 
-target_compile_definitions(OpenGL PUBLIC GLEW_STATIC)
-
 #set( OF_DIRECTORY_BY_USER ./GLFW/lib-universal )
 #list(APPEND CMAKE_MODULE_PATH ./GLFW/lib-universal)
 #list(APPEND CMAKE_MODULE_PATH /Users/fkavum/Documents/CPlus/OpenGL/src/Tutorial2/GLFW/lib-universal)

@@ -1102,6 +1102,18 @@
 			"value" : "FALSE"
 		},
 		{
+			"name" : "GLEWLib",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/Users/fkavum/Documents/CPlus/OpenGL/dependencies/GLEW/lib/libGLEW.a"
+		},
+		{
 			"name" : "GLFWLib",
 			"properties" : 
 			[

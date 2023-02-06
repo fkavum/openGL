@@ -24,7 +24,6 @@ DOC: @see www.glfw.org/documentation.html
     - To include lib -> go: Linker -> Input -> glfw3.lib | also link opengl32.lib,User32.lib,Gdi32.lib, Shell32.lib
 
 
-
 if we dont link all the external libs like opengl32/User32 etc it will compile succesfull but not linked succesfully we cant have build!
 
  -    Where to find which library to add -> you can read the output it will say something like:
@@ -32,6 +31,7 @@ if we dont link all the external libs like opengl32/User32 etc it will compile s
     unresolved external symbol _imp_XXXXX reference in function .... You can just search this in google to find lib name
 
 /*
+in the lib folder if libname suffix with "s" letter thats the static library
 
 A static library(.a) is a library that can be linked directly into the final executable produced by the linker,it is contained in it and there is no need to have the library into the system where the executable will be deployed.
 

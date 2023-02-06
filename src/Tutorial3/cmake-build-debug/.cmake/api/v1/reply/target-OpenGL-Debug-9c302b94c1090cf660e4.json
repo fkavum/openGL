@@ -12,7 +12,6 @@
 		[
 			"add_executable",
 			"target_link_libraries",
-			"target_compile_definitions",
 			"target_include_directories"
 		],
 		"files" : 
@@ -37,15 +36,21 @@
 				"parent" : 0
 			},
 			{
-				"command" : 2,
+				"command" : 1,
 				"file" : 0,
-				"line" : 13,
+				"line" : 15,
 				"parent" : 0
 			},
 			{
-				"command" : 3,
+				"command" : 2,
 				"file" : 0,
 				"line" : 9,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 13,
 				"parent" : 0
 			}
 		]
@@ -62,18 +67,15 @@
 					"fragment" : "-std=gnu++17"
 				}
 			],
-			"defines" : 
-			[
-				{
-					"backtrace" : 3,
-					"define" : "GLEW_STATIC"
-				}
-			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 4,
 					"path" : "/Users/fkavum/Documents/CPlus/OpenGL/src/Tutorial3/./../../dependencies/GLFW/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/fkavum/Documents/CPlus/OpenGL/src/Tutorial3/./../../dependencies/GLEW/include"
 				}
 			],
 			"language" : "CXX",
@@ -107,6 +109,11 @@
 			{
 				"backtrace" : 2,
 				"fragment" : "/Users/fkavum/Documents/CPlus/OpenGL/dependencies/GLFW/lib-universal/libglfw3.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/Users/fkavum/Documents/CPlus/OpenGL/dependencies/GLEW/lib/libGLEW.a",
 				"role" : "libraries"
 			}
 		],
