@@ -7,7 +7,7 @@ which initialize a graphics context for OpenGL
  OpenGL functions are implemented in you GPU drivers, so what we need to do, for any functionality newer than OpenGL 1.1,
  get into drivers and pull out the functions. Which means, get the function declerations and then link against functions.
 
- We need access to driver DLL files and just retreve function pointers to the functions inside those libraries.
+ We need access to driver DLL files and just retrieve function pointers to the functions inside those libraries.
 
 so for OpenGL if we want to do this manually, it wont be crssplatform, to access the drivers and pull out functions from that we need to use win32 api calls etc.
  loading library and loading function points all that, second problem we need to go thought all the opengl functions and implement it...
@@ -29,4 +29,16 @@ all it does, it provides the OpenGL Api specification, kind of function declarat
 
 
  in the lib folder if libname suffix with "s" letter thats the static library
+
+
+
+ - ERROR HANDLING: UNRESOLVED external symbol -> means you have linking error. ORR like we havent use proper define symbol...
+
+ for example: unresolved external symbol __imp__glewInit referenced function. when you go in the glewInit function in the glew.h file you will see
+ you need GLEW_STATIC symbol. (because we are linking static library not dynamic library...)
+
+To define symbol: go project properties, go C/C++ , go preprocessor and preprocessor definitions. write GLEW_STATIC;
+be sure you are in the all configrutions in the properties window
+
+
  */

@@ -26,7 +26,7 @@ DOC: @see www.glfw.org/documentation.html
 
 if we dont link all the external libs like opengl32/User32 etc it will compile succesfull but not linked succesfully we cant have build!
 
- -    Where to find which library to add -> you can read the output it will say something like:
+ -    Where to find which library to add -> you can read the OUTPUT it will say something like:
 
     unresolved external symbol _imp_XXXXX reference in function .... You can just search this in google to find lib name
 

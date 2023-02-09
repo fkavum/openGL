@@ -1143,8 +1143,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/Users/fkavum/Documents/CPlus/OpenGL/src/Tutorial3/cmake-build-debug",
-		"source" : "/Users/fkavum/Documents/CPlus/OpenGL/src/Tutorial3"
+		"build" : "/Users/fkavum/Documents/CPlus/OpenGL/src/Tutorial4/cmake-build-debug",
+		"source" : "/Users/fkavum/Documents/CPlus/OpenGL/src/Tutorial4"
 	},
 	"version" : 
 	{

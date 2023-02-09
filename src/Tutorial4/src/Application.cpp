@@ -16,7 +16,6 @@ int main(void) {
         return -1;
     }
 
-    /* Make the window's context current */
     //This is the line when we have OpenGL window context, you need to call glew init after that line
     glfwMakeContextCurrent(window);
 
