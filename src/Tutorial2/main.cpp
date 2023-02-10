@@ -1,9 +1,12 @@
 /* THERE IS HOW TO ADD LIB. DOC what is static/dynamic linking etc...
 
+ ## Setting up OpenGL and Creating a Window in C++
+
 Our goal creating window:
 - Windowing actually depends on operating system spesific, for example if we want win32 api
 - we will windowing creating code, glfw (create opengl context and windowing) not drawing triangle or smt like that.
 - if we want to do that by our self, we need to code 3 times...
+
 
 
 DOC: @see www.glfw.org/documentation.html

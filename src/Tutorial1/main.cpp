@@ -1,5 +1,6 @@
 /*
 
+ ## Welcome to OpenGL
  OpenGL by it self is just a spesification, its not a code or anything.
  What it is is a specification that lists: hey this
  function should exist should take this paramaters that should return this value...

@@ -3,8 +3,9 @@
 - We made glew work!
 - We note down some error handling like correct symbols and linking
 
-# Tutorial 4
-
+# Tutorial 4 
+## Vertex Buffers and Drawing a Triangle in OpenGL (not really drawing)
+- By not really means we will, its black screen right now...
 - We will make our triangle run with modern openGL
     -   To make it work we need to have at least VertexBuffer and Shader!
 - Vertex Buffer

@@ -2,6 +2,8 @@
 Previously: we set up OpenGL windowing and context library called GLFW
 which initialize a graphics context for OpenGL
 
+ ## USING MODERN OPENGL in C++
+
  Windows has graphics api called directX, OpenGL its not operating system related, its upto GPU manufacturers.
  Since we are on windows, we need to actually get all of the modern OpenGL functions, we need to get them from somewhere,
  OpenGL functions are implemented in you GPU drivers, so what we need to do, for any functionality newer than OpenGL 1.1,
