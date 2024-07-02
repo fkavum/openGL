@@ -2,6 +2,40 @@
 #include <GLFW/glfw3.h>
 #include <iostream>
 
+static unsigned int CompileShader(unsigned int type,const std::string& source){
+    unsigned  int id = glCreateShader(type);
+    const char* src = source.c_str(); //Giving pointer of first letter we can also say '&source[0]'
+    //Make sure your src still alive cant be null.
+
+    //Second Arg, How many source code are we specifying.
+    //&src is double pointer, pointer address of pointer address it asks.
+    //forth arg, if null string is assumed to be null terminated
+    glShaderSource(id,1,&src, nullptr);
+    glCompileShader(id);
+
+    //TODO: error handling of shader code...
+    return id;
+}
+
+static unsigned int CreateShader(const std::string& vertexShader, const std::string& fragmentShader){
+    unsigned int program = glCreateProgram();
+    //  unsigned int vs = glCreateShader(GL_VERTEX_SHADER);
+    unsigned int vs = CompileShader(GL_VERTEX_SHADER, vertexShader);
+    unsigned int fs = CompileShader(GL_FRAGMENT_SHADER, fragmentShader);
+
+    //Now we need to attach both of these shaders to our program.
+    //This is like compiling c++ code. we got two different files and basicly we are linking them into one program.
+    glAttachShader(program,vs);
+    glAttachShader(program,fs);
+    glLinkProgram(program);
+    glValidateProgram(program);
+
+    glDeleteShader(fs);
+    glDeleteShader(vs);
+
+    return program;
+}
+
 int main(void) {
     GLFWwindow *window;
 

@@ -7,7 +7,7 @@
 ## How Shaders Work in OpenGL
 
 - Its just a program run in GPU, by program we mean blob of code.
-- We need to say something to GPU to have output with the given data (vertex buffer) to GPU. (5.30)
+- We need to say something to GPU to have output with the given data (vertex buffer) to GPU.
 
 
 - When we issue drawCall, vertex and fragment shader get called in order then we see the result/rasterization. There are many stage in between.

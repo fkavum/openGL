@@ -15,4 +15,3 @@ find_library(GLEWLib libGLEW.a ./../../dependencies/GLEW/lib)
 target_link_libraries(OpenGL LINK_PUBLIC ${GLEWLib})
 
 #target_compile_definitions(OpenGL PUBLIC GLEW_STATIC)
-
